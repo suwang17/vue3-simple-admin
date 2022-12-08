@@ -1,0 +1,21 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "exclude": ["node_modules", "tests/server/**/*.ts", "dist", "**/*.js"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target":"ESNext",
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "lib": ["dom", "esnext","ScriptHost", "ES2019.Array"],
+    "removeComments":true, 
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+  
+}

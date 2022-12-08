@@ -1,0 +1,10 @@
+#app {
+    .sidebar-container {
+        .scrollbar-wrapper {
+            overflow-x: hidden !important;
+          }
+        .el-scrollbar {
+            height: calc(100% - 50px);
+          }
+    }
+} 
